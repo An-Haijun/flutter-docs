@@ -1,7 +1,7 @@
 const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
-  dest: '../../flutter-develop-docs',
+  dest: '../../flutter-docs',
   port: 3100,
   locales: {
     '/': {
@@ -23,7 +23,7 @@ module.exports = ctx => ({
   ],
   theme: '@vuepress/vue',
   themeConfig: {
-    repo: 'An-Haijun/flutter-develop-docs',
+    repo: 'An-Haijun/flutter-docs',
     editLinks: true,
     docsDir: 'packages/docs/docs',
     smoothScroll: true,
