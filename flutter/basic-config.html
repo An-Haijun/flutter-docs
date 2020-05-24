@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基本设置 | Flutter 应用开发文档</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/flutter-docs/logo.png">
+    <link rel="manifest" href="/flutter-docs/manifest.json">
+    <link rel="apple-touch-icon" href="/flutter-docs/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/flutter-docs/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="Flutter Dart 应用开发文档">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/flutter-docs/assets/css/0.styles.b01d88cb.css" as="style"><link rel="preload" href="/flutter-docs/assets/js/app.93fea009.js" as="script"><link rel="preload" href="/flutter-docs/assets/js/4.f8d21187.js" as="script"><link rel="preload" href="/flutter-docs/assets/js/5.a70a448f.js" as="script"><link rel="preload" href="/flutter-docs/assets/js/6.5e79e2c1.js" as="script"><link rel="prefetch" href="/flutter-docs/assets/js/10.15f5c869.js"><link rel="prefetch" href="/flutter-docs/assets/js/11.7bf3b673.js"><link rel="prefetch" href="/flutter-docs/assets/js/12.4f0bc4e7.js"><link rel="prefetch" href="/flutter-docs/assets/js/13.0fbbb1b0.js"><link rel="prefetch" href="/flutter-docs/assets/js/7.9ed46187.js"><link rel="prefetch" href="/flutter-docs/assets/js/8.5a200c02.js"><link rel="prefetch" href="/flutter-docs/assets/js/9.40ded8e4.js"><link rel="prefetch" href="/flutter-docs/assets/js/vendors~flowchart.98c08932.js"><link rel="prefetch" href="/flutter-docs/assets/js/vendors~notification.b69eca1f.js">
+    <link rel="stylesheet" href="/flutter-docs/assets/css/0.styles.b01d88cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/flutter-docs/" class="home-link router-link-active"><!----> <span class="site-name">Flutter 应用开发文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/flutter-docs/flutter/" class="nav-link router-link-active">
+  Flutter
+</a></div><div class="nav-item"><a href="/flutter-docs/dart/" class="nav-link">
+  Dart
+</a></div> <a href="https://github.com/An-Haijun/flutter-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/flutter-docs/flutter/" class="nav-link router-link-active">
+  Flutter
+</a></div><div class="nav-item"><a href="/flutter-docs/dart/" class="nav-link">
+  Dart
+</a></div> <a href="https://github.com/An-Haijun/flutter-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <div class="carbon-ads"></div> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Flutter</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/flutter-docs/flutter/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/flutter-docs/flutter/directory-structure.html" class="sidebar-link">目录结构</a></li><li><a href="/flutter-docs/flutter/basic-config.html" aria-current="page" class="active sidebar-link">基本设置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/flutter-docs/flutter/basic-config.html#安装-flutter-到-windows" class="sidebar-link">安装 Flutter 到 Windows</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基本设置"><a href="#基本设置" class="header-anchor">#</a> 基本设置</h1> <p>开发环境搭建, 主要为 Windows or Mac</p> <h2 id="安装-flutter-到-windows"><a href="#安装-flutter-到-windows" class="header-anchor">#</a> 安装 Flutter 到 Windows</h2> <h3 id="配置用户环境变量"><a href="#配置用户环境变量" class="header-anchor">#</a> 配置用户环境变量</h3> <p>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">PUB_HOSTED_URL</span><span class="token operator">=</span>https://pub.flutter-io.cn
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">FLUTTER_STORAGE_BASE_URL</span><span class="token operator">=</span>https://storage.flutter-io.cn
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>此镜像为临时镜像，并不能保证一直可用，你也可以参考https://flutter.io/community/china 以获得有关镜像服务器的最新动态。</p></div> <h3 id="系统要求"><a href="#系统要求" class="header-anchor">#</a> 系统要求</h3> <p>要安装并运行Flutter，您的开发环境必须满足以下最低要求:</p> <ul><li>操作系统: Windows 7 或更高版本 (64-bit)</li> <li>磁盘空间: 400 MB (不包括Android Studio的磁盘空间).</li> <li>工具: Flutter 依赖下面这些命令行工具.
+<ul><li>PowerShell 5.0 或更新的版本；</li> <li>Git for Windows (Git命令行工具)；
+如果已安装Git for Windows，请确保可以在命令提示符或PowerShell中运行 git 命令。</li></ul></li></ul> <h3 id="获取-flutter-sdk"><a href="#获取-flutter-sdk" class="header-anchor">#</a> 获取 Flutter SDK</h3> <p><a href="https://flutter.dev/docs/development/tools/sdk/releases" target="_blank" rel="noopener noreferrer">官网下载地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <picture><source srcset="/flutter-docs/flutter-download-sdk.png" media="(min-width: 719px)"> <img alt="Image" class="flutter-download-sdk"></picture> <p>注意，Flutter的渠道版本会不停变动，请以Flutter官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去Flutter github项目下去下载安装包，地址：<a href="https://github.com/flutter/flutter/releases" target="_blank" rel="noopener noreferrer">https://github.com/flutter/flutter/releases<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 。</p> <ul><li><p>将安装包zip解压到你想安装Flutter SDK的路径（如：C:\src\flutter；注意，不要将flutter安装到需要一些高权限的路径如C:\Program Files\）。</p></li> <li><p>在Flutter安装目录的flutter文件下找到flutter_console.bat，双击运行并启动flutter命令行，接下来，你就可以在Flutter命令行运行flutter命令了。</p></li></ul> <h3 id="运行-flutter-doctor-命令"><a href="#运行-flutter-doctor-命令" class="header-anchor">#</a> 运行 flutter doctor 命令</h3> <p>在Flutter命令行运行如下命令来查看是否还需要安装其它依赖，如果需要，安装它们：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>PS user<span class="token operator">&gt;</span> flutter doctor
+</code></pre></div><p>执行后，如遇以下错误（Flutter 要求 SDK 必须为 Clone 版本）</p> <div class="language-shell extra-class"><pre class="language-shell"><code>
+PS user<span class="token operator">&gt;</span> flutter doctor
+Error: The Flutter directory is not a clone of the GitHub project.
+       The flutter tool requires Git <span class="token keyword">in</span> order to operate properly<span class="token punctuation">;</span>
+       to <span class="token builtin class-name">set</span> up Flutter, run the following command:
+       <span class="token function">git</span> clone -b stable https://github.com/flutter/flutter.git
+</code></pre></div><p>解决：删除原安装包，在当前安装目录执行如下命令，重新下载：</p> <p><a href="https://blog.csdn.net/u014764233/article/details/96484215" target="_blank" rel="noopener noreferrer">致谢: https://blog.csdn.net/u014764233/article/details/96484215<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> clone -b stable https://github.com/flutter/flutter.git
+</code></pre></div><p>注：国内 Clone 太慢了 <a href="https://blog.csdn.net/weixin_30521161/article/details/95491097" target="_blank" rel="noopener noreferrer">致谢: https://blog.csdn.net/weixin_30521161/article/details/95491097<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>以下是 Clone 过程</p> <picture><source srcset="/flutter-docs/flutter-doctor-1.png" media="(min-width: 719px)"> <img alt="Image" class="flutter-doctor"></picture> <picture><source srcset="/flutter-docs/flutter-doctor-2.png" media="(min-width: 719px)"> <img alt="Image" class="flutter-doctor"></picture> <p>我这里提示，未安装 Flutter plugin and Dart plugin 需要安装下</p> <div class="language-shell extra-class"><pre class="language-shell"><code>X Flutter plugin not installed<span class="token punctuation">;</span> this adds Flutter specific functionality.
+X Dart plugin not installed<span class="token punctuation">;</span> this adds Dart specific functionality.
+</code></pre></div><p>1、在 Android Studio 中搜索 Flutter、Dart;</p> <p>Configure -&gt; Plugins -&gt; 搜索 Flutter and Dart</p> <p>2、可能遇到 AS3.5 以上版本搜索不到指定插件的问题；</p> <p>搜了无数办法，取消安全链接，取消代理等等，3.5版本解决不了，最后终于找到
+，打开android studio 的安装路径下的bin 文件找到 idea.properties 并打开 idea.properties</p> <p>将第18行（默认注释状态，取消注释）</p> <div class="language-xml extra-class"><pre class="language-xml"><code>idea.plugins.path=${idea.config.path}/plugins
+</code></pre></div><p>改成</p> <div class="language-xml extra-class"><pre class="language-xml"><code>idea.plugins.path=${idea.system.path}/plugins
+</code></pre></div><p>3、安装 Flutter and Dart;</p> <p>4、安装完成，验证提示如下则成功</p> <div class="language-shell extra-class"><pre class="language-shell"><code>PS user<span class="token operator">&gt;</span>  flutter doctor
+Doctor summary <span class="token punctuation">(</span>to see all details, run flutter doctor -v<span class="token punctuation">)</span>:
+<span class="token punctuation">[</span>√<span class="token punctuation">]</span> Flutter <span class="token punctuation">(</span>Channel stable, v1.17.1, on Microsoft Windows <span class="token punctuation">[</span>Version <span class="token number">10.0</span>.18363.836<span class="token punctuation">]</span>, locale zh-CN<span class="token punctuation">)</span>
+
+<span class="token punctuation">[</span><span class="token operator">!</span><span class="token punctuation">]</span> Android toolchain - develop <span class="token keyword">for</span> Android devices <span class="token punctuation">(</span>Android SDK version <span class="token number">29.0</span>.2<span class="token punctuation">)</span>
+    <span class="token operator">!</span> Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+<span class="token punctuation">[</span>√<span class="token punctuation">]</span> Android Studio <span class="token punctuation">(</span>version <span class="token number">3.5</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token operator">!</span><span class="token punctuation">]</span> Connected device
+    <span class="token operator">!</span> No devices available
+
+<span class="token operator">!</span> Doctor found issues <span class="token keyword">in</span> <span class="token number">2</span> categories.
+</code></pre></div><p>5、重新启动 As</p> <h3 id="创建-flutter-app"><a href="#创建-flutter-app" class="header-anchor">#</a> 创建 Flutter App</h3> <ul><li>file -&gt; New Flutter Project</li></ul> <picture><source srcset="/flutter-docs/create-app-1.png" media="(min-width: 719px)"> <img alt="Image" class="create-app"></picture> <picture><source srcset="/flutter-docs/create-app-2.jpg" media="(min-width: 719px)"> <img alt="Image" class="create-app"></picture> <picture><source srcset="/flutter-docs/create-app-3.png" media="(min-width: 719px)"> <img alt="Image" class="create-app"></picture> <ul><li>Run</li></ul> <p>遇到 'Running Gradle task 'assembleDebug' 慢的问题，修改如下：</p> <p>1、打开文件 android -&gt; build.gradle</p> <div class="language-xml extra-class"><pre class="language-xml"><code>buildscript {
+  repositories {
+        maven { url &quot;https://maven.google.com&quot; }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
+        jcenter()
+        google()
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url &quot;https://maven.google.com&quot; }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
+        jcenter()
+        mavenCentral()
+        google()
+    }
+}
+</code></pre></div><p>2、修改Flutter的配置文件, 该文件在`Flutter安装目录/packages/flutter_tools/gradle/flutter.gradle</p> <div class="language-xml extra-class"><pre class="language-xml"><code>buildscript {
+  repositories {
+        maven { url &quot;https://maven.google.com&quot; }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
+        jcenter()
+        google()
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/An-Haijun/flutter-docs/edit/master/packages/docs/docs/flutter/basic-config.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020-5-24 4:17:32 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/flutter-docs/flutter/directory-structure.html" class="prev">
+        目录结构
+      </a></span> <!----></p></div> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/flutter-docs/assets/js/app.93fea009.js" defer></script><script src="/flutter-docs/assets/js/4.f8d21187.js" defer></script><script src="/flutter-docs/assets/js/5.a70a448f.js" defer></script><script src="/flutter-docs/assets/js/6.5e79e2c1.js" defer></script>
+  </body>
+</html>
