@@ -1,7 +1,7 @@
 const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
-  dest: '../../flutter-docs',
+  dest: '/flutter-docs/',
   port: 3100,
   locales: {
     '/': {
